@@ -3166,7 +3166,7 @@ BOT_EXE = {BOT_EXE}
                     file_data = read_file(args, b=True)
                     send(file_data, doc=os.path.split(args)[-1]) if file_data else send(f'file is empty ({args}) [*]')
                 except:
-                    send(f'not downloaded ({args}) [-]')
+                    send(f'file is not downloaded ({args}) [-]')
             else:
                 send(f'file does not exist ({args}) [*]')
 
