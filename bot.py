@@ -2833,7 +2833,7 @@ keylogger -r  —  Reset keylogger data
     cmd_lower = cmd_lower.split(maxsplit=1)
 
     if len(cmd_lower) != 2:
-        send(f'Command not found ({cmd})')
+        send(f'command not found ({cmd})')
         return
     
     args = cmd.split(maxsplit=1)[-1]
@@ -4838,7 +4838,7 @@ STATUS: {"ENABLED" if n[7] else "DISABLED"}\n
 
                     return
              
-    send(f'Command not found ({cmd})')
+    send(f'command not found ({cmd})')
 
 
 def get_admin():
