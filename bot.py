@@ -1720,7 +1720,7 @@ def user(mode, name, password='', old_password='', description='', group=''):
         case 'password':
             try:
                 win32net.NetUserChangePassword(None, name, old_password, password)
-                return f'user ({name}) password ({old_password if old_password else "none"}) --> ({password}) [+]'
+                return f'user ({name}) password ({old_password if old_password else "none"}) --> ({password if password else "none"}) [+]'
             except:
                 return f'user password is unchanged ({name}) [-]'
         case 'create':
