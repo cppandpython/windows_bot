@@ -4756,7 +4756,7 @@ def init():
         raise ValueError('(PASSWORD) is empty')
 
     try:
-        decrypt(encrypt('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZабвгдеёжзийклмнопрстуфхцчшщыэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЫЭЮЯЄєЇїІіҐґ0123456789!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~ \t\n\u200B\u200F\u2060'))
+        decrypt(encrypt(' \t\n\u200B\u200F\u20600123456789!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZабвгдеёжзийклмнопрстуфхцчшщыэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЫЭЮЯЄєЇїІіҐґ'))
     except:
         raise ValueError('(SEED) is invalid')
     
@@ -4789,7 +4789,7 @@ def bot():
         disable_web_page_preview=True,
         protect_content=True,
         threaded=True,
-        num_threads=5,
+        num_threads=3,
         suppress_middleware_excepions=True
     )
 
