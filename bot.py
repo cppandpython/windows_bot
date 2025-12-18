@@ -1610,7 +1610,7 @@ def delete_app(name):
                     elif rapp.endswith('exe'):
                         cmd = f'"{rapp}" /VERYSILENT /NORESTART /SUPPRESSMSGBOXES'
                     else:
-                        cmd = f'{uninstaller} {path}' 
+                        cmd = rapp 
 
                     shell(cmd)
                 except:
