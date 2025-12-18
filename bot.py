@@ -1602,8 +1602,8 @@ def delete_app(name):
                 try:
                     rapp = reg_get_value(os.path.join(n, i), 'UninstallString')[0]
 
-                    uninstaller, path = rapp.split(maxsplit=1)
-                    uninstaller, path = uninstaller.lower(), path.strip()
+                    unapp_str = rapp.split(maxsplit=1)
+                    uninstaller, path = unapp_str[0].lower(), unapp_str[-1]
 
                     if uninstaller.startswith('msiexec'):
                         cmd = f'msiexec {path} /quiet /qn /norestart'
@@ -2674,7 +2674,7 @@ user -j (name) -g (group)  —  User join group\n
 user -uj (name) -g (group)  —  User unjoin group\n
 user -a (name)  —  Make user admin\n
 user -ua (name)  —  Unmake user admin\n
-user -p (name) -o (old_password) -n (new_password)  —  Change user password\n
+user -p (name) -o (none|old_password) -n (none|new_password)  —  Change user password\n
 user -c (name) -p (password) -d (description)  —  Create user\n
 user -r (name)  —  Delete user\n
 user -e (name)  —  Enable user\n
