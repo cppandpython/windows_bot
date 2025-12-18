@@ -115,7 +115,7 @@ User Interface Commands
 
 <br>
 
-Bot — Provide full remote access to the system
+windows_bot — Provide full remote access to the system
 
 <br>
 
@@ -133,14 +133,10 @@ Bot — Provide full remote access to the system
 # Clone the repository
 git clone https://github.com/cppandpython/windows_bot.git
 
-# Edit in bot_telegram.py or bot_socket.py
-if bot_telegram.py
-    TOKEN = 'YOUR TELEGRAM BOT TOKEN'
-PATH = 'YOUR BOT PATH'
-PASSWORD = 'YOUR PASSWORD'
+
 
 # Launch
-python bot.py
+
 ```
 
 
@@ -151,7 +147,7 @@ python bot.py
 
 <br>
 
-bot — Обеспечивает полный удаленный доступ к системе
+windows_bot — Обеспечивает полный удаленный доступ к системе
 
 <br>
 
@@ -169,12 +165,6 @@ bot — Обеспечивает полный удаленный доступ к
 # Клонируй репозиторий
 git clone https://github.com/cppandpython/windows_bot.git
 
-# Изменить в bot_telegram.py или bot_socket.py
-if bot_telegram.py
-    TOKEN = 'ВАШ ТЕЛЕГРАМ ТОКЕН БОТА'
-PATH = 'ВАШ ПУТЬ ДЛЯ БОТА'
-PASSWORD = 'ВАШ ПАРОЛЬ'
-
 # Запуск
-python bot.py
+
 ```
