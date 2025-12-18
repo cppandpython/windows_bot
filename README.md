@@ -133,7 +133,7 @@ windows_bot — Provide full remote access to the system
 # Clone the repository
 git clone https://github.com/cppandpython/windows_bot.git
 
-# Change in bot.py 
+# Change consts ​​in bot.py
 TOKEN = TELEGRAM BOT TOKEN
 PASSWORD = PASSWORD FOR SESSION WITH TELEGRAM BOT
 SEED = TELEGRAM BOT ENCRYPTION ACCEPTABLE VALUE TYPE int  
@@ -145,7 +145,8 @@ BOT_TASK_DESCRIPTION = TASK DESCRIPTION IN SCHEDULE FOR TELEGRAM BOT
 BOT_EXE = TELEGRAM BOT WILL BE LAUNCHED IN (EXE IF BOT_EXE == True ELSE PYTHON) MODE
 
 # Launch
-
+pip install -r requirements.txt
+python bot.py
 ```
 
 
@@ -174,6 +175,18 @@ windows_bot — Обеспечивает полный удаленный дос�
 # Клонируй репозиторий
 git clone https://github.com/cppandpython/windows_bot.git
 
-# Запуск
+# Изменить константы в bot.py
+TOKEN = TELEGRAM BOT TOKEN
+PASSWORD = PASSWORD FOR SESSION WITH TELEGRAM BOT
+SEED = TELEGRAM BOT ENCRYPTION ACCEPTABLE VALUE TYPE int  
+PATH = PATH TO SAVE TELEGRAM BOT
 
+BOT_FILE_NAME = HOW TO SAVE TELEGRAM BOT NAME IN PATH
+BOT_TASK_NAME = TASK NAME IN SCHEDULE FOR TELEGRAM BOT
+BOT_TASK_DESCRIPTION = TASK DESCRIPTION IN SCHEDULE FOR TELEGRAM BOT
+BOT_EXE = TELEGRAM BOT WILL BE LAUNCHED IN (EXE IF BOT_EXE == True ELSE PYTHON) MODE
+
+# Запуск
+pip install -r requirements.txt
+python bot.py
 ```
