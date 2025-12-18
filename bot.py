@@ -1608,7 +1608,7 @@ def delete_app(name):
                     if uninstaller.startswith('msiexec'):
                         cmd = f'msiexec {path} /quiet /qn /norestart'
                     elif rapp.endswith('exe'):
-                        cmd = f'"{rapp}" /VERYSILENT /NORESTART /SUPPRESSMSGBOXES'
+                        cmd = f'"{rapp}" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART'
                     else:
                         cmd = rapp 
 
