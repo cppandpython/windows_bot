@@ -4864,7 +4864,7 @@ DATE: {session_date[0]} | {session_date[1]}
 
             if os.path.isfile(mem_user):
                 os.remove(mem_user)
-                send(chat_id, f'left session ({session_id}) [+]')
+                send(chat_id, f'session is left ({session_id}) [+]')
             else:
                 send(chat_id, f'your account is not verified ({user_id}) [*]')
             
