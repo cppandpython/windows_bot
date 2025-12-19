@@ -4854,7 +4854,7 @@ DATE: {session_date[0]} | {session_date[1]}
         try:
             write_file(os.path.join(PATH_SHARE, doc_name), tg.download_file(tg.get_file(doc_id).file_path))
         except:
-            send(chat_id, f'file is not uploaded ({doc_name}) [-]')
+            send(chat_id, f'failed to upload file ({doc_name}) [-]')
         else:
             send(chat_id, f'file is uploaded ({doc_name}) [+]')
 
