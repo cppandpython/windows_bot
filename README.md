@@ -140,8 +140,8 @@ SEED = TELEGRAM BOT ENCRYPTION ACCEPTABLE VALUE TYPE int
 PATH = PATH TO SAVE TELEGRAM BOT
 
 BOT_FILE_NAME = HOW TO SAVE TELEGRAM BOT NAME IN PATH
-BOT_TASK_NAME = TASK NAME IN SCHEDULE FOR TELEGRAM BOT
-BOT_TASK_DESCRIPTION = TASK DESCRIPTION IN SCHEDULE FOR TELEGRAM BOT
+BOT_TASK_NAME = TASK NAME IN SCHEDULE FOR TELEGRAM BOT # NECESSARY IF BOT_EXE IS True
+BOT_TASK_DESCRIPTION = TASK DESCRIPTION IN SCHEDULE FOR TELEGRAM BOT # NECESSARY IF BOT_EXE IS True
 BOT_EXE = TELEGRAM BOT WILL BE LAUNCHED IN (EXE IF BOT_EXE == True ELSE PYTHON) MODE
 
 # Launch
@@ -182,9 +182,9 @@ SEED = ДОПУСТИМОЕ ЗНАЧЕНИЕ ШИФРОВАНИЯ TELEGRAM-БО�
 PATH = ПУТЬ ДЛЯ СОХРАНЕНИЯ TELEGRAM-БОТА
 
 BOT_FILE_NAME = ИМЯ ФАЙЛА TELEGRAM-БОТА ДЛЯ СОХРАНЕНИЯ В PATH
-BOT_TASK_NAME = ИМЯ ЗАДАЧИ В ПЛАНИРОВЩИКЕ ДЛЯ TELEGRAM-БОТА
-BOT_TASK_DESCRIPTION = ОПИСАНИЕ ЗАДАЧИ В ПЛАНИРОВЩИКЕ ДЛЯ TELEGRAM-БОТА
-BOT_EXE = TELEGRAM-БОТ БУДЕТ ЗАПУЩЕН В РЕЖИМЕ (EXE ЕСЛИ BOT_EXE == TRUE ИНАЧЕ PYTHON)
+BOT_TASK_NAME = ИМЯ ЗАДАЧИ В ПЛАНИРОВЩИКЕ ДЛЯ TELEGRAM-БОТА # НЕОБХОДИМО ЕСЛИ BOT_EXE ЯВЛЯЕТСЯ True
+BOT_TASK_DESCRIPTION = ОПИСАНИЕ ЗАДАЧИ В ПЛАНИРОВЩИКЕ ДЛЯ TELEGRAM-БОТА # НЕОБХОДИМО ЕСЛИ BOT_EXE ЯВЛЯЕТСЯ True
+BOT_EXE = TELEGRAM-БОТ БУДЕТ ЗАПУЩЕН В РЕЖИМЕ (EXE ЕСЛИ BOT_EXE == True ИНАЧЕ PYTHON)
 
 # Запуск
 pip install -r requirements.txt
