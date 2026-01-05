@@ -349,21 +349,11 @@ def change_file(path, pattern, value, delete=False, enc=False):
 
 
 def encrypt(data):
-    encrypted = ''
-    
-    for n in data:
-        encrypted += chr((ord(n) << KEY[0]) ^ KEY[1]) + '\u200C'
-    
-    return encrypted
+    return ''.join([chr((ord(n) << KEY[0]) ^ KEY[1]) for n in data])
 
 
 def decrypt(data):
-    decrypted = ''
-    
-    for n in data.rstrip('\u200C').split('\u200C'):
-        decrypted += chr((ord(n) ^ KEY[1]) >> KEY[0])
-
-    return decrypted
+    return ''.join([chr((ord(n) ^ KEY[1]) >> KEY[0]) for n in data])
 
 
 def decode_bytes(data):
