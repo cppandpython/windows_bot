@@ -2403,7 +2403,7 @@ autostart -r  —  Reset bot autostart
         case 'ls':
             ls_list = ls()
 
-            send(f'Directory: {os.getcwd()}\n\n' + tabulate(ls_list, headers=[('NAME'), ('TYPE'), ('HIDDEN'), ('OWNER'), ('SIZE'), ('TIME')], tablefmt='grid'), doc='ls.txt') if ls_list else send(NULL)
+            send(f'DIRECTORY: {os.getcwd()}\n\n' + tabulate(ls_list, headers=[('NAME'), ('TYPE'), ('HIDDEN'), ('OWNER'), ('SIZE'), ('TIME')], tablefmt='grid'), doc='ls.txt') if ls_list else send(NULL)
             return
         case 'mkfile':
             send('mkfile (path) -d (data)  —  Create file')
