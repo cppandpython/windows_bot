@@ -499,7 +499,7 @@ def ls():
 
     for n in os.listdir('.'):
         try:
-            stat = os.stat(n)
+            stat = os.lstat(n)
             
             size = f'{stat.st_size} bytes'  
             time = ctime(stat.st_mtime)  
