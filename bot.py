@@ -408,10 +408,10 @@ def http(url, json=False):
     try:
         query = http_get(url, headers=HTTP_HEADER, timeout=30)
     except:
-        return None
+        return dict() if json else None
     
     if not query.ok:
-        return None
+        return dict() if json else None
     
     return query.json() if json else query.content
     
