@@ -381,7 +381,7 @@ if os.path.isfile(CONFIG_SEED):
 
 
 seed(SEED)
-KEY = [randint(1, 7), randint(1, 255)]
+KEY = (randint(1, 7), randint(1, 255))
 
 
 if os.path.isfile(CONFIG_TOKEN):
