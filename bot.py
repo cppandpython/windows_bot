@@ -2361,7 +2361,7 @@ User Interface Commands
             send(os.path.join(NODE, USER) if current_user is None else current_user)
             return
         case 'config':
-            send(f'''
+            send('''
 config -g  —  Get current bot config\n
 config (TOKEN|PASSWORD|SEED) -s (value)  —  Set config option\n
 config -r (TOKEN|PASSWORD|SEED)  —  Reset config option
