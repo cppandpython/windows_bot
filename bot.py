@@ -2887,7 +2887,7 @@ BOT_EXE = {BOT_EXE}
                 for n in os.listdir(PATH_MEM):
                     try:
                         name, date = decrypt(read_file(os.path.join(PATH_MEM, n))).split('=')
-                        accounts.append([((int(n) ^ KEY[1]) >> KEY[0]), ('@' + name), date])
+                        accounts.append([((int(n) ^ KEY[1]) >> KEY[0]), f'@{name}', date])
                     except:
                         continue
                 
