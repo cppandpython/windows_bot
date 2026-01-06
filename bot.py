@@ -121,7 +121,7 @@ USER = getuser()
 LANG = windows_locale.get(win32api.GetUserDefaultLangID(), NULL)
 ENCODING = getencoding()
 
-FILE_ENCODING = 'utf-8'
+FILE_ENCODING = 'UTF-8'
 FILE_BOT_RESTART = os.path.join(PATH_SYS, '0x3b8f1289273df19c')
 FILE_AUTOSTART = os.path.join(PATH_SYS, '0x79f2d2686b6da01e')
 FILE_DXDIAG = os.path.join(PATH_TMP, '0x3c93cc8a140e3331.txt')
