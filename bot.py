@@ -2515,7 +2515,7 @@ autostart -r  —  Reset bot autostart
             return
         case 'site':
             send('''
-site -p  —  Open website\n
+site -p (url)  —  Open website\n
 site -d (url) -n (name)  —  Download file from website\n
 site -l  —  Get blocked sites\n
 site -b (domain)  —  Block site\n
