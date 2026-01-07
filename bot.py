@@ -4592,16 +4592,15 @@ STATUS: {"ENABLED" if n[7] else "DISABLED"}\n
 
 def get_admin():
     if windll.shell32.IsUserAnAdmin() == 0:
-        while True:
-            try:
-                if BOT_EXE:
-                    win32api.ShellExecute(None, 'runas', BOT_FILE_NAME, None, None, 0)
-                else:
-                    win32api.ShellExecute(None, 'runas', py_path, __file__, None, 1)
-            except: 
-                continue
+        try:
+            if BOT_EXE:
+                win32api.ShellExecute(None, 'runas', BOT_FILE_NAME, None, None, 0)
             else:
-                os.abort()
+                win32api.ShellExecute(None, 'runas', py_path, __file__, None, 1)
+        except: 
+            raise PermissionError('Administrator rights are required to execute')
+        else:
+            os.abort()
 
 
 def setup():
