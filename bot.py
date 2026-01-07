@@ -2891,7 +2891,7 @@ BOT_EXE = {BOT_EXE}
                     except:
                         continue
                 
-                send(tabulate(accounts, headers=[('ID'), ('NAME'), ('CONNECTION DATE')], tablefmt='grid'), doc='account.txt') if accounts else send('no accounts [*]')
+                send(tabulate(accounts, headers=[('ID'), ('NAME'), ('CONNECTION-DATE')], tablefmt='grid'), doc='account.txt') if accounts else send('no accounts [*]')
                 return
             elif exp := parse_cmd(r'-d\s*(?P<id>\d+)', args):
                 session_id = int(exp['id'])
