@@ -2503,7 +2503,7 @@ autostart -r  —  Reset bot autostart
         case 'arp':
             arp_list = arp()
 
-            send(tabulate(arp(), headers=[('IP'), ('MAC'), ('TYPE')], tablefmt='grid'), doc='arp.txt') if arp_list else send(NULL)
+            send(tabulate(arp_list, headers=[('IP'), ('MAC'), ('TYPE')], tablefmt='grid'), doc='arp.txt') if arp_list else send(NULL)
             return
         case 'netstat':
             netstat_list = netstat()
