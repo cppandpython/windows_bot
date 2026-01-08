@@ -4265,9 +4265,9 @@ STATUS: {"ENABLED" if n[7] else "DISABLED"}\n
                 send(get_date()[0])
                 return
             elif exp := parse_cmd(r'-s\s*(?P<time>.+)', args):
-                time = exp['time']
+                time_ = exp['time']
 
-                send(f'time is changed ({time}) [+]' if shell(f'time {time}') else f'time is invalid ({time}) [-]') 
+                send(f'time is changed ({time_}) [+]' if shell(f'time {time_}') else f'time is invalid ({time_}) [-]') 
                 return
         case 'date':
             if args == '-g':
