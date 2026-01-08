@@ -4246,10 +4246,10 @@ STATUS: {"ENABLED" if n[7] else "DISABLED"}\n
 
                 if not output:
                     send(f'cmd command is executed ({command}) [+]' if wincmd(command) else f'failed to execute cmd command ({command}) [-]')
-                    return
                 else:
                     send(wincmd(command, output=True), doc='cmd.txt')
-                    return
+                    
+                return
         case 'powershell':
             if exp := parse_cmd(r'(?P<output>-e|-g)\s*(?P<command>.+)', args):
                 output, command = exp['output'] == '-g', exp['command']
