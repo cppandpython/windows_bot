@@ -4596,7 +4596,7 @@ def get_admin():
             else:
                 win32api.ShellExecute(None, 'runas', py_path, __file__, None, 1)
         except: 
-            raise PermissionError('Administrator rights are required to execute')
+            raise PermissionError('administrator rights are required to execute')
         else:
             os.abort()
 
