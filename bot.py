@@ -25,7 +25,7 @@ if not SYSTEMDISK.endswith(os.sep): SYSTEMDISK += os.sep
 TOKEN = 'TELEGRAM BOT TOKEN'
 PASSWORD = 'PASSWORD FOR SESSION WITH TELEGRAM BOT'
 SEED = 0 # RESPONSIBLE FOR ENCRYPTION INITIAL VALUES 
-PATH = os.path.join('PATH TO SAVE TELEGRAM BOT') 
+PATH = 'PATH TO SAVE TELEGRAM BOT'
 #-----------------------------|END|-----------------------------#
 
 
