@@ -367,12 +367,9 @@ def decrypt(data):
 
 def decode_bytes(data):
     try:
-        return data.decode(detect(data[:512])['encoding'])
+        return data.decode(detect(data[:128])['encoding'])
     except:
-        try:
-            return data.decode(ENCODING)
-        except: 
-            return None
+        return data.decode(ENCODING, errors='replace')
         
 
 def mem_id(user_id):
