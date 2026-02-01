@@ -4710,7 +4710,7 @@ GitHub: https://github.com/cppandpython
 AUTHOR: Vladislav Khudash
 VERSION: win32
 
-HOST: {NODE + "\\\\" + USER} 
+HOST: {NODE}\\\\{USER}
 PLATFORM: {OS["platform"]} {OS["release"]} {OS["edition"]} 
 DATE: {session_date[0]} | {session_date[1]}
 '''
