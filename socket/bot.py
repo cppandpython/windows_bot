@@ -4647,7 +4647,7 @@ def init():
 def get_ip():
     try:
         with socket(AF_INET, SOCK_DGRAM) as sock:
-            sock.connect(('255.255.255.255', 255))
+            sock.connect(('203.0.113.42', 4242))
             return sock.getsockname()[0]
     except:
         raise ValueError('ip is empty')
