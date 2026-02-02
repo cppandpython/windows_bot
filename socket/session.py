@@ -461,7 +461,7 @@ def main():
             except ConnectionError:
                 clear(), print(f'connection to session was interrupted ({server_ip}) [-]'), sleep(3), clear()
             except BaseException as error:
-                clear(), print(f'session was interrupted ({server_ip}) [-]\n{type(error).__name__}({error})'), sleep(3), clear()
+                clear(), print(f'session was interrupted ({server_ip}) [-]\n\n{type(error).__name__}({error})'), sleep(3), clear()
 
             clear()
             break
@@ -469,3 +469,4 @@ def main():
 
 
 if __name__ == '__main__': main()
+
