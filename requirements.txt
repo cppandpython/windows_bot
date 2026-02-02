@@ -1,0 +1,15 @@
+pywin32
+sounddevice
+keyboard
+opencv-python
+psutil
+mouse
+pywifi
+comtypes
+requests
+winotify
+playsound
+tabulate
+chardet
+mss
+telebot
