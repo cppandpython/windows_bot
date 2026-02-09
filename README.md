@@ -135,12 +135,12 @@ git clone https://github.com/cppandpython/windows_bot.git
 # Change consts ​​in bot.py
 TOKEN = TELEGRAM BOT TOKEN
 PASSWORD = PASSWORD FOR SESSION WITH TELEGRAM BOT
-SEED = ACCEPTABLE VALUE TYPE int # RESPONSIBLE FOR ENCRYPTION INITIAL VALUES  
+SEED = ACCEPTABLE VALUE TYPE int & RESPONSIBLE FOR ENCRYPTION INITIAL VALUES  
 PATH = PATH TO SAVE TELEGRAM BOT
 
 BOT_FILE_NAME = HOW TO SAVE TELEGRAM BOT NAME IN PATH
-BOT_TASK_NAME = TASK NAME IN SCHEDULE FOR TELEGRAM BOT # NECESSARY IF BOT_EXE IS True
-BOT_TASK_DESCRIPTION = TASK DESCRIPTION IN SCHEDULE FOR TELEGRAM BOT # NECESSARY IF BOT_EXE IS True
+BOT_TASK_NAME = TASK NAME IN SCHEDULE FOR TELEGRAM BOT & NECESSARY IF BOT_EXE IS True
+BOT_TASK_DESCRIPTION = TASK DESCRIPTION IN SCHEDULE FOR TELEGRAM BOT & NECESSARY IF BOT_EXE IS True
 BOT_EXE = TELEGRAM BOT WILL BE LAUNCHED IN (EXE IF BOT_EXE == True ELSE PYTHON) MODE
 
 # Launch
@@ -177,12 +177,12 @@ git clone https://github.com/cppandpython/windows_bot.git
 # Изменить константы в bot.py
 TOKEN = ТОКЕН TELEGRAM-БОТА
 PASSWORD = ПАРОЛЬ ДЛЯ СЕССИИ С TELEGRAM-БОТОМ
-SEED = ДОПУСТИМОЕ ЗНАЧЕНИЕ ШИФРОВАНИЯ TELEGRAM-БОТА ТИП int # ОТВЕТСТВЕННЫЙ ЗА НАЧАЛЬНЫЕ ЗНАЧЕНИЯ ШИФРОВАНИЯ  
+SEED = ДОПУСТИМОЕ ЗНАЧЕНИЕ ШИФРОВАНИЯ TELEGRAM-БОТА ТИП int & ОТВЕТСТВЕННЫЙ ЗА НАЧАЛЬНЫЕ ЗНАЧЕНИЯ ШИФРОВАНИЯ  
 PATH = ПУТЬ ДЛЯ СОХРАНЕНИЯ TELEGRAM-БОТА
 
 BOT_FILE_NAME = ИМЯ ФАЙЛА TELEGRAM-БОТА ДЛЯ СОХРАНЕНИЯ В PATH
-BOT_TASK_NAME = ИМЯ ЗАДАЧИ В ПЛАНИРОВЩИКЕ ДЛЯ TELEGRAM-БОТА # НЕОБХОДИМО ЕСЛИ BOT_EXE ЯВЛЯЕТСЯ True
-BOT_TASK_DESCRIPTION = ОПИСАНИЕ ЗАДАЧИ В ПЛАНИРОВЩИКЕ ДЛЯ TELEGRAM-БОТА # НЕОБХОДИМО ЕСЛИ BOT_EXE ЯВЛЯЕТСЯ True
+BOT_TASK_NAME = ИМЯ ЗАДАЧИ В ПЛАНИРОВЩИКЕ ДЛЯ TELEGRAM-БОТА & НЕОБХОДИМО ЕСЛИ BOT_EXE ЯВЛЯЕТСЯ True
+BOT_TASK_DESCRIPTION = ОПИСАНИЕ ЗАДАЧИ В ПЛАНИРОВЩИКЕ ДЛЯ TELEGRAM-БОТА & НЕОБХОДИМО ЕСЛИ BOT_EXE ЯВЛЯЕТСЯ True
 BOT_EXE = TELEGRAM-БОТ БУДЕТ ЗАПУЩЕН В РЕЖИМЕ (EXE ЕСЛИ BOT_EXE == True ИНАЧЕ PYTHON)
 
 # Запуск
