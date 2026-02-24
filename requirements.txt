@@ -1,0 +1,16 @@
+pywin32
+psutil
+mouse
+keyboard
+sounddevice
+opencv-python
+pywin32
+pypykatz
+requests
+pywifi
+mss
+playsound==1.2.2
+winotify
+tabulate
+chardet
+telebot
